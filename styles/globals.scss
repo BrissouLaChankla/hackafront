@@ -4,27 +4,49 @@
 $primary-color: #3690ed;
 $secondary-color: #151d27;
 $light-background: #1b232c;
-$grey-color:#6b7889;
-$radius:30px;
-$small-radius:10px;
+$grey-color: #6b7889;
+$radius: 30px;
+$small-radius: 10px;
+
 :root {
   --primary-color: #3690ed;
   --secondary-color: #151d27;
   --light-background: #1b232c;
-  --grey-color:#6b7889;
-  --radius:30px;
-  --small-radius:10px;
+  --grey-color: #6b7889;
+  --radius: 30px;
+  --small-radius: 10px;
+}
+
+.mt-1 {
+  margin-top: .5rem;
+}
+.text-muted {
+  color: var(--grey-color);
+}
+
+.text-end {
+  text-align: end;
+}
+
+.ms-1 {
+  margin-left: .5rem;
+}
+
+
+.ms-2 {
+  margin-left: 1rem;
 }
 
 h1 {
   font-size: 5rem;
-  font-weight: 900!important;
+  font-weight: 900 !important;
 }
 
 h2 {
-  font-size:2.2rem;
-  font-weight: 900!important;
+  font-size: 2.2rem;
+  font-weight: 900 !important;
 }
+
 html,
 body {
   max-width: 100vw;
@@ -42,6 +64,7 @@ body {
 .d-block {
   display: block;
 }
+
 .m-auto {
   margin: auto;
 }
@@ -49,32 +72,57 @@ body {
 .text-right {
   text-align: end;
 }
+
 main {
   flex-grow: 1;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
 }
 
 .rounded {
-  border-radius:$radius
+  border-radius: $radius
 }
 
 .rounded-small {
-  border-radius:$small-radius
+  border-radius: $small-radius
 }
 
 .mt-3 {
-  margin-top: 2rem!important;
+  margin-top: 2rem !important;
+}
+
+.px-3 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.p-2 {
+  padding: 1rem;
 }
 
 .mt-2 {
-  margin-top: 1rem!important;
+  margin-top: 1rem !important;
 }
+.px-2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.my-2 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
 .mt-5 {
-  margin-top: 4rem!important;
+  margin-top: 4rem !important;
 }
+
 .pointer {
   cursor: pointer;
 }
@@ -84,8 +132,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .text-primary {
-  color:$primary-color
+  color: $primary-color
 }
+
 .h-vh-100 {
   height: 100vh;
 }
@@ -93,9 +142,11 @@ h1,h2,h3,h4,h5,h6 {
 a {
   text-decoration: none;
 }
+
 .fw-bold {
   font-weight: bold;
 }
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -107,6 +158,7 @@ hr {
 .p-3 {
   padding: 2rem;
 }
+
 .mt-auto {
   margin-top: auto;
 }
@@ -114,14 +166,17 @@ hr {
 .text-center {
   text-align: center;
 }
+
 .text-white {
   color: white;
 }
+
 .bg-primary {
-  background-color:$primary-color
+  background-color: $primary-color
 }
+
 .bg-secondary {
-  background-color:$secondary-color
+  background-color: $secondary-color
 }
 
 .d-flex {
@@ -147,28 +202,26 @@ hr {
 
 
 .container {
-  margin:auto;
+  margin: auto;
 }
+
 @media (min-width: 576px) {
   .container {
-      max-width: 540px;
+    max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-      max-width: 720px;
+    max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-      max-width: 960px;
+    max-width: 960px;
   }
 }
-
-
-
 
 
 .bg-white {
@@ -176,6 +229,5 @@ hr {
 }
 
 .bg-light {
-  background-color:$light-background
+  background-color: $light-background
 }
-

@@ -1,6 +1,13 @@
+import styles from '../styles/LastTweets.module.scss'
+import Tweet from '../components/Tweet';
+
 function LastTweets() {
 	return (
-		<div>Ceci est la page LastTweets</div>
+		<div>
+			<Tweet />
+			<Tweet />
+			<Tweet />
+		</div>
     )
 }
 
