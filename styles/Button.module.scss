@@ -1,0 +1,17 @@
+.button {
+    border-radius: var(--radius);   
+    font-weight: bold;
+    font-size: 1rem;
+    padding: .7rem 4.5rem; 
+    cursor: pointer;
+
+    &.outline{
+        background-color: transparent!important;
+        color:var(--primary-color);
+        border: 1px solid var(--grey-color);
+    }
+    &.fill{
+        background-color:var(--primary-color);
+        color: white;
+    }
+}

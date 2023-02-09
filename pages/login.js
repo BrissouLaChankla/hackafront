@@ -1,14 +1,37 @@
+import { useState } from 'react';
 import Login from '../components/login/Login';
-import SignIn from '../components/login/SignIn';
-import SignUp from '../components/login/SignUp';
+import Modal from '../components/login/Modal';
 
+export default function Home () { 
+  const [showModal, setShowModal] = useState(false)
+  const [infoModal, setInfoModal] = useState({})
 
-export default function Home() {
+const launchModal = (which) => {
+  if(which === "signin") {
+    setInfoModal({
+      firstname:true,
+      title: "Connect to Hackatweet"
+    });
+  } else {
+    setInfoModal({
+      firstname:false,
+      title: "Create your Hackatweet account"
+    });
+  }
+
+  
+  setShowModal(true)
+}
+
+const closeModal = () => {
+  setShowModal(false)
+}
   return (
     <>
-    <Login />
-    <SignIn />
-    <SignUp />
+    <Login launchModal={launchModal} />
+    {showModal &&
+      <Modal infos={infoModal} closeModal={closeModal} />
+    }
     </>
   )
 }
