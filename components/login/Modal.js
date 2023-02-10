@@ -21,7 +21,7 @@ function Modal(props) {
             password: signPassword
         }
 
-        fetch('http://localhost:3000/users/signup', {
+        fetch('https://hackaback.vercel.app/users/signup', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(body),
@@ -42,7 +42,7 @@ function Modal(props) {
             password: signPassword
         }
 
-        fetch('http://localhost:3000/users/signin', {
+        fetch('https://hackaback.vercel.app/users/signin', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(body),

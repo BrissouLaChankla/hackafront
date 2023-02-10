@@ -49,7 +49,7 @@ export default function Home() {
   }
 
   const fetchTweets = () => {
-    fetch('http://localhost:3000/tweets')
+    fetch('https://hackaback.vercel.app/tweets')
       .then(response => response.json())
       .then(data => {
         if (data.result) {
@@ -64,7 +64,7 @@ export default function Home() {
   }
 
   const fetchHashtags = () => {
-    fetch('http://localhost:3000/tweets/hashtags')
+    fetch('https://hackaback.vercel.app/tweets/hashtags')
       .then(response => response.json())
       .then(data => {
         if (data.result) {
@@ -81,7 +81,7 @@ export default function Home() {
       tweet_id: tweetId,
       token: user.token
     }
-    fetch('http://localhost:3000/tweets/like', {
+    fetch('https://hackaback.vercel.app/tweets/like', {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
@@ -100,7 +100,7 @@ export default function Home() {
   }
 
   const handleDelete = (tweetid) => {
-    fetch('http://localhost:3000/tweets/' + tweetid, {
+    fetch('https://hackaback.vercel.app/tweets/' + tweetid, {
       method: 'DELETE',
       headers: { 'Content-Type': 'application/json' },
     }).then(response => response.json())
@@ -134,7 +134,7 @@ export default function Home() {
       message: message,
       token: user.token,
     }
-    fetch('http://localhost:3000/tweets', {
+    fetch('https://hackaback.vercel.app/tweets', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
