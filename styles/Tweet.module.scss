@@ -1,3 +1,25 @@
 .tweet {
     border-top: 1px solid var(--grey-color);
+
+    a {
+        color: var(--primary-color);
+        font-weight: bold;
+    }
+}
+
+.likeIcon {
+    cursor: pointer;
+    transition: all .3s ease;
+    &:hover {
+        color: red;
+    }
+}
+
+
+.trashIcon {
+    transition: all .2s ease;
+    cursor: pointer;
+    &:hover {
+        color: purple;
+    }
 }

@@ -12,7 +12,7 @@
   border-radius: 20px;
   background-color: var(--light-background);
 
-  & div{
+  & >*{
   padding: .8rem 1.5rem;
   transition: all .1s ease;
   border-radius: 20px;
@@ -84,4 +84,8 @@
   font-size: 1rem;
   margin-left: 1rem;
   cursor: pointer;
+}
+
+.allTweetsContainer {
+  overflow-y: auto;
 }
